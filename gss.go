@@ -7,7 +7,7 @@ func Ox3F(...error) {}
 func Ox40(FuncMetaData) {}
 
 // $
-func Ox24(map[string]StuctMetaData) {}
+func Ox24(map[string]StructMetaData) {}
 
 // #
 func Ox23() {}
