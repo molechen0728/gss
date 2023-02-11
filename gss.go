@@ -26,7 +26,7 @@ type FuncMetaData struct {
 	DelayInmillis int
 }
 
-type StuctMetaData struct {
+type StructMetaData struct {
 	Name    string
 	No      int
 	Mutable bool
