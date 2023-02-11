@@ -4,10 +4,10 @@ package gss
 func Ox3F(...error) {}
 
 // @
-func Ox40() {}
+func Ox40(FuncMetaData) {}
 
 // $
-func Ox24() {}
+func Ox24(map[string]StuctMetaData) {}
 
 // #
 func Ox23() {}
@@ -18,3 +18,22 @@ func Ox23() {}
 // 							  }
 
 var E error
+
+type FuncMetaData struct {
+	Name          string
+	Requires      []string
+	Hidden        bool
+	DelayInmillis int
+}
+
+type StuctMetaData struct {
+	Name    string
+	No      int
+	Mutable bool
+}
+
+func Ret(e error) {
+	ifErrorNotNilReturn(e)
+}
+
+func ifErrorNotNilReturn(error) {}
