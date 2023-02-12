@@ -32,8 +32,4 @@ type StructMetaData struct {
 	Mutable bool
 }
 
-func Ret(e error) {
-	ifErrorNotNilReturn(e)
-}
-
-func ifErrorNotNilReturn(error) {}
+type IfErrorNotNilReturn = error
